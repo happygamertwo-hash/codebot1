@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AI Coder Chatbot</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>AI Coder Chatbot</h1>
+    <div id="chat" class="chat"></div>
+
+    <div class="controls">
+      <select id="preset">
+        <option value="">— Optional preset —</option>
+        <option value="generate_python_script">Generate Python script</option>
+        <option value="generate_node_script">Generate Node.js script</option>
+        <option value="explain_code">Explain code snippet</option>
+      </select>
+      <textarea id="input" placeholder="Ask the bot to write code, explain code, or scaffold a project..."></textarea>
+      <button id="send">Send</button>
+    </div>
+    <p class="hint">Tip: Ask for a file by saying "Create a file named hello.py that ..." or use the "Generate file" button next to code snippets.</p>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
